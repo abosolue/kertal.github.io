@@ -1,0 +1,77 @@
+body {
+    background-color: #f5f5f5;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+h1, p {
+    margin: 20px;
+}
+.highlight {
+    color: #FF4136;
+    font-weight: bold;
+}
+#toc {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+#toc:hover {
+    background-color: #FF4136;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#oc {
+    margin: 20px;
+    border: 1px solid #333;
+    padding: 10px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+#oc:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upload-btn {
+    margin: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upload-btn:hover {
+    background-color: #FF4136;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.upload-btn i {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.upload-btn span {
+    flex: 1;
+    text-align: center;
+}

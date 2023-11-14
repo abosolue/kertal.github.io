@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE" />
+    <meta http-equiv="Cache-control" content="public" />
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet" />
+    <title>Kertal</title>
+    <link rel="canonical" href="https://kertal.club" />
+    <meta name="theme-color" content="#000" />
+    <meta property="og:title" content="Kertal" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="real hackers" />
+    <style>
+      body {
+        background-image: url('C/lain.gif'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed; /* optional */
+      }
+
+      #enter .window {
+        width: 40%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #main {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="enter">
+      <div class="window enter-screen">
+        <div class="title-bar">
+          <div class="title-bar-text">User Login</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-wrapper">
+          <div class="window-content">
+            <form id="login-form">
+              <fieldset>
+                <legend>Login</legend>
+                <p>Select a user to login to</p>
+                <select name="wallpaper" size="1">
+                  <option>Kertal</option>
+                </select>
+              </fieldset>
+            </form>
+          </div>
+          <div class="window-actions">
+            <button class="window-action-button main" id="login-button">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // dont know ig this is needed but makes it look cooler
+      document.getElementById('login-button').addEventListener('click', function() {
+        
+        var user = document.forms['login-form']['wallpaper'].value;
+        
+        if(user == 'Kertal' ){
+          window.location.href = 'home.html';
+        }
+      });
+    </script>
+
+  </body>
+</html>

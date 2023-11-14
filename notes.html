@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>/./notes</title>
+	<link rel="canonical" href="kertal.club/note" />
+	<link rel="stylesheet" href="S/s.css">
+	<link rel="stylesheet" href="C/notes.css">
+	<link rel="shortcut icon" href="P/real.png" type="image/x-icon">
+	<link rel="icon" href="P/real.png" type="image/x-icon">
+	<style>
+	</style>
+</head>
+<body>
+	<h1>/./notes</h1>
+	<ul>
+	    <li>
+	        <div class="toggle">
+	        	<span class="text">targets</span>
+	            <div class="arrow">&#x2193;</div>
+	        </div>
+	        <div class="details">
+	            <p>These are the targets we are currently focusing on.</p>
+	            <p> CrowdStrike </p>
+	            <p> Rapid7 </p>
+	            <p> Tencent Cloud </p>
+	        </div>
+	    </li>
+	    <li>
+	        <div class="toggle">
+	        	<span class="text">joining</span>
+	            <div class="arrow">&#x2193;</div>
+	        </div>
+	        <div class="details">
+	            <p>If you want to join bring something g</p>
+	            <p><a href="#">link here/a></p>
+	        </div>
+	    </li>
+	    <li>
+	        <div class="toggle">
+	        	<span class="text">source code</span>
+	            <div class="arrow">&#x2193;</div>
+	        </div>
+	        <div class="details">
+	            <p>source code will be uploaded soon  XD</p>
+	            <p><a href="#">click here;</a></p>
+	        </div>
+	    </li>
+	</ul>
+	<a href="home.html" id="toc">return</a>
+	<script>
+		// I AM GOING YO KILL MYSELFG
+		const toggles = document.querySelectorAll('.toggle');
+		toggles.forEach((toggle) => {
+			const arrow = toggle.querySelector('.arrow');
+			const details = toggle.nextElementSibling;
+			toggle.addEventListener('click', () => {
+				toggle.classList.toggle('open');
+				arrow.classList.toggle('open');
+				details.classList.toggle('open');
+			});
+		});
+	</script>
+</body>
+</html>

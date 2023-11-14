@@ -1,0 +1,254 @@
+:root {
+    --width: 800px;
+    --height: 600px;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #090909;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .load {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+  
+  .一 {
+    animation: 一 0.5s step-end;
+  }
+  
+  .二 {
+    animation: 一 3s step-end;
+  }
+  
+  .三 {
+    animation: 一 3s step-end;
+  }
+  
+  .四 {
+    animation: 一 3.5s step-end;
+  }
+  
+  .五 {
+    animation: 一 7s step-end;
+  }
+  
+  @keyframes 一 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .ichi,
+  .ni,
+  .san,
+  .roku,
+  .nana,
+  .hachi,
+  .juu,
+  .tsumi {
+      position: fixed;
+      width: var(--width);
+      height: var(--height);
+  }
+  
+  .ichi {
+      z-index: 1;
+  }
+  
+  .ni {
+      z-index: 2;
+      background-color: #222;
+  }
+  
+  .san {
+      z-index: 3;
+      background-color: #111;
+  }
+  
+  .shi {
+      z-index: 4;
+      background-color: #111;
+  }
+  
+  .go {
+      width: calc(100%);
+      height: calc(100%);
+  }
+  
+  @media (pointer: coarse) {
+      .go {
+          width: calc(100%);
+          height: calc(100%);
+      }
+  
+      .ichi,
+      .ni,
+      .san,
+      .roku,
+      .nana,
+      .hachi,
+      .juu,
+      .tsumi {
+          width: 100%;
+          height: 100%;
+      }
+  }
+  
+  .anim-typewriter {
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typewriter .5s steps(55) 1s 1 normal both, blinkTextCursor 500ms steps(55) infinite normal;
+  }
+  
+  @keyframes typewriter {
+      from {
+          width: 0;
+      }
+  
+      to {
+          width: 24em;
+      }
+  }
+  
+  @keyframes blinkTextCursor {
+      from {
+          border-right-color: rgba(255, 255, 255, .75);
+      }
+  
+      to {
+          border-right-color: transparent;
+      }
+  }
+  
+  .anim {
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typewriter .5s steps(55) 1.5s 1 normal both, blinkTextCursor 500ms steps(55) infinite normal;
+  }
+  
+  .anim2 {
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typewriter .5s steps(88) 2s 1 normal both, blinkTextCursor 500ms steps(55) infinite normal;
+  }
+  
+  /* New style rules for a cyberpunk feel */
+  
+  .h1 {
+      font-size: 3em;
+      margin: 0.5em;
+      font-style: italic;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+  }
+  
+  .h1 span {
+      font-size: 1em;
+      font-weight: normal;
+      display: block;
+      margin-top: 0.5em;
+      opacity: 0.5;
+  }
+  
+  .subheading {
+      font-size: 1.3em;
+      margin-bottom: 2em;
+      text-align: center;
+  }
+  
+  .message {
+      margin: 1em auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 1px;
+      font-size: 1.2em;
+  }
+  
+  .message i {
+      font-size: 2em;
+      margin-right: 0.5em;
+      color: #33bb9b;
+  }
+  
+  .message span {
+      font-weight: bold;
+      color: #ff6f69;
+  }
+  
+  .button {
+      display: inline-block;
+      background-color: #33bb9b;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      margin-top: 2em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+      background-color: #1abc9c;
+  }
+  
+  .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 1em;
+      text-align: center;
+      text-transform: uppercase;
+      color: #33bb9b;
+      letter-spacing: 0.1em;
+  }
+  
+  .logo span {
+      font-weight: normal;
+      color: #fff;
+      display: block;
+      font-size: 1em;
+      margin-top: -1em;
+      opacity: 0.5;
+  }
+  
+  .container {
+      text-align: center;
+      margin-top: 2em;
+  }
+  
+  .box {
+      height: 50px;
+      width: 50px;
+      background-color: #33bb9b;
+      margin: 10px;
+      display: inline-block;
+      animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+      0%, 100% {
+          transform: scale(1);
+      }
+  
+      50% {
+          transform: scale(1.2);
+      }
+  }

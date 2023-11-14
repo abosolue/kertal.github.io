@@ -1,0 +1,103 @@
+body {
+  background-image: url("lain.gif"); /* background image which we dont have */
+  color: rgb(222, 217, 203);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lucida Console";
+}
+
+.menu {
+  background-color: rgba(249, 6, 6, 0);
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(38, 78, 208, 0.8);
+  
+  width: 850px;
+  
+  margin: 10px;
+  margin-left:auto;
+	margin-right:auto;
+	margin-top:40px;
+	box-shadow:rgb(191, 186, 186) 0px 5px 10px;
+	text-align:center;
+	padding-top:40px;
+	
+	font-family: "Lucida Console";
+}
+
+.menu p {
+ padding-left: 25px; 
+ padding-right: 25px;  
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgba(226, 177, 177, 0);
+  position: fixed;
+  float:left;
+}
+
+.nav a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #bf9f2b;
+  
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(67, 106, 234, 0.8);
+  
+}
+
+.nav li{
+  transition: transform .2s; 
+}
+
+.nav li:hover{
+  background-color: rgba(0,0,0,0.9);
+  transform: scale(1.01); 
+}
+
+.box {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(55, 97, 236, 0.8);
+  background-color: rgba(211, 27, 27, 0);
+  box-shadow:rgb(227, 227, 227) 0px 5px 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+a {
+	color: #8C762A;
+	text-decoration: none;
+}
+
+a:hover {
+  color: #7b5221;
+}
+
+.navi_button {
+ position: fixed;
+ float: right;
+}
+
+.zoom {
+  transition: transform .2s; 
+}
+
+.zoom:hover{
+  transform: scale(1.06); 
+}

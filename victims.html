@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>/./@victims</title>
+	<link rel="canonical" href="#">
+	<link rel="stylesheet" href="S/s.css">
+	<link rel="stylesheet" href="C/vic.css">
+	<link rel="shortcut icon" href="P/real.png" type="image/x-icon">
+	<link rel="icon" href="P/real.png" type="image/x-icon">
+	<style>
+	</style>
+</head>
+<body>
+	<h1><a href="#">kertal/./@victims</a></h1>
+	<img id="oc" src="S/cf.png" alt=".">
+	<p>This is where we will post all of our data leaks/breaches. The information will be posted in a .txt file, and we will mention the company that we breached. We will give the company a time limit to pay up, or we will sell the data if it's over <span class="highlight">2 GB</span>. Stay tuned for more updates.</p>
+
+
+	<script src="https://kit.fontawesome.com/8fb699f8cf.js" crossorigin="anonymous"></script>
+	<script>
+		function uploadFile(event) {
+			event.preventDefault();
+
+			const fileInput = document.querySelector('input[type=file]');
+			const file = fileInput.files[0];
+			const fileSize = file.size / (1024 * 1024);
+			const uploadBtn = document.querySelector('.upload-btn');
+
+			if (!file) {
+				alert('Please select a file.');
+				return;
+			}
+
+			if (fileSize > 2) {
+				alert('The file size should not exceed 2 MB.');
+				return;
+			}
+
+			const xhr = new XMLHttpRequest();
+			const formData = new FormData();
+			formData.append('file', file);
+
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState === 4) {
+					if (xhr.status === 200) {
+						alert('File uploaded successfully.');
+					} else {
+						alert('There was an error uploading the file.');
+					}
+				}
+			}
+
+			xhr.open('POST', 'upload.php');
+			xhr.send(formData);
+		}
+
+		const uploadBtnWrapper = document.querySelector('.upload-btn-wrapper');
+		const fileInput = document.querySelector('input[type=file]');
+
+		uploadBtnWrapper.addEventListener('submit', uploadFile);
+
+		fileInput.addEventListener('change', () => {
+			const uploadedFile = fileInput.value.split('\\').pop();
+			const uploadBtn = document.querySelector('.upload-btn');
+			const fileNameSpan = uploadBtn.querySelector('span');
+			fileNameSpan.textContent = uploadedFile;
+		});
+	</script>
+		<a id="toc" href="home.html">return</a>
+		<div class="upload-btn-wrapper">
+			<button class="upload-btn"><i class="fas fa-file-upload"></i><span>Upload file</span></button>
+			<input type="file" name="myfile" accept=".txt" />
+		  </div>
+	  
+</body>
+</html>
+
+<!-- make sure to fix the upload button if i havent done so thx-->

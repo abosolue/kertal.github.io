@@ -1,0 +1,89 @@
+body {
+  background-image: url("lain.gif"); /* make sure to change it*/
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  background-repeat: repeat; /* dont touch this, if its not repeat */
+  background-size: cover;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7b5221;
+}
+
+h1 {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black;
+}
+
+p {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(214, 215, 221, 0.6);
+  width: 750px;
+  margin: 10px auto;
+  box-shadow: 0px 5px 10px rgba(222, 215, 215, 0);
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.9;
+}
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.login input[type=text],
+.login input[type=password] {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.login input[type=submit] {
+  background-color: #ffffff;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  border-radius: 30px;
+  font-size: 18px; /* dont change this font i kinda like it :3 */
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+.login input[type=submit]:hover {
+  background-color: #ffffff;
+  color: #183b61;
+}
+
+body {
+  color: white;
+  background-color: #ffffff;
+  height: 20vh;
+}
+
+/* dont touch line 82 please!!
